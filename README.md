@@ -1,8 +1,12 @@
+
 # 🎮 Tres en Raya: Edición Élite
 
 **Donde el conocimiento es tu mejor jugada**
 
-![Captura del juego](captura_de_pantalla.png)
+![Captura del juego]
+
+  <img width="792" height="917" alt="Captura de pantalla juego" src="https://github.com/user-attachments/assets/52de534f-a122-471e-a82c-f34096c4e9bb" />
+
 
 ---
 **VIDEO DE EJECUCION DEL JUEGO**
