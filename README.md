@@ -2,7 +2,7 @@
 
 **Donde el conocimiento es tu mejor jugada**
 
-![Captura del juego](captura-juego.png)
+![Captura del juego](captura_de_pantalla.png)
 
 ---
 **VIDEO DE EJECUCION DEL JUEGO**
