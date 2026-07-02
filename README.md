@@ -3,7 +3,7 @@
 
 **Donde el conocimiento es tu mejor jugada**
 
-![Captura del juego]
+
 
   <img width="792" height="917" alt="Captura de pantalla juego" src="https://github.com/user-attachments/assets/52de534f-a122-471e-a82c-f34096c4e9bb" />
 
@@ -85,7 +85,10 @@ Ingresa el nombre de cada jugador antes de comenzar:
 
 El informe completo del proyecto, elaborado en LaTeX según el formato de la Universidad La Salle, incluye marco teórico, diseño (diagramas de clases y flujo), implementación comentada línea por línea, análisis de complejidad Big O y rúbrica de autoevaluación.
 
-👉 [Ver Informe Completo (PDF)](latex/cvalienteq_lp1_26a_proyectofinal.pdf)
+👉 [Ver Informe Completo (PDF)] [Tres_En_Raya_omegaup__latex__Aida_ (1) (1).pdf](https://github.com/user-attachments/files/29608248/Tres_En_Raya_omegaup__latex__Aida_.1.1.pdf)
+
+
+
 
 ---
 
