@@ -1,0 +1,16 @@
+Instrucciones para las imágenes del informe en LaTeX:
+
+Para que el archivo 'informe.tex' compile perfectamente sin errores de imágenes faltantes, debes guardar las siguientes capturas y recursos en esta misma carpeta ('latex/img/'):
+
+1. logo_internacional_secundario_color.png: El logo de tu universidad (Universidad La Salle) o el logo de cabecera.
+2. IMAGEN1.png: Una captura del juego ejecutándose (por ejemplo, mostrando el tablero principal y las tarjetas de puntuación de los jugadores).
+3. diagrama_de_flujo.png: Un diagrama de flujo o esquema de la lógica del juego.
+4. codigo.png: Una captura de pantalla de la terminal mostrando la compilación exitosa con 'javac' y la ejecución.
+
+Si no tienes estas imágenes listas o deseas compilar el PDF de prueba de inmediato, puedes comentar la inclusión de imágenes en el archivo '.tex' poniendo un signo de porcentaje (%) al inicio de cada línea '\includegraphics...'. Por ejemplo:
+%\includegraphics[width=0.85\textwidth,keepaspectratio]{img/IMAGEN1.png}
+
+¡Mucho éxito con tu entrega!
+Autora: Carmen Aida Valiente Quiroz
+Asesor: Richart Escobedo Quispe
+Año: 2026

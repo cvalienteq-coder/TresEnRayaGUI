@@ -1,0 +1,500 @@
+\documentclass{article}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%			USEPACKAGE			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[top=3cm, bottom=3cm, outer=3cm, inner=3cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan,
+	citecolor=green,
+}
+\usepackage{array}
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+\usepackage{natbib}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{amsmath,amssymb}
+\usepackage{color, colortbl}
+\usepackage[english,spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+ 
+\AtBeginDocument{\selectlanguage{spanish}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\refname}{Referencias}
+\AtBeginDocument{\renewcommand\tablename{Tabla}}
+ 
+\usepackage[T1]{fontenc}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Índice Alfabético, intoc]
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%			DEFINE COLOR			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{tablebackground}{rgb}{0.0, 0.45, 0.63}
+ 
+\lstdefinestyle{ascii-tree}{
+    literate={├}{|}1 {─}{--}1 {└}{+}1
+}
+ 
+\lstset{
+	extendedchars=true,
+	inputencoding=utf8,
+	basicstyle={\small\ttfamily},
+	showstringspaces=false,
+	commentstyle=\color{dkgreen},
+	keywordstyle=\color{blue},
+	frame=single,
+	framextopmargin=4pt,
+	framexbottommargin=4pt,
+	framexleftmargin=4pt,
+	framexrightmargin=2pt,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	columns=flexible,
+	numbers=none,
+	numberstyle=\tiny,
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=2,
+	rulecolor=\color{black!30},
+	backgroundcolor=\color{gray!10},
+}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%			NEW COMMAND			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\itemEmail}{cvalienteq@ulasalle.edu.pe}
+\newcommand{\itemTeacher}{Carmen Aida Valiente Quiroz}
+\newcommand{\itemAdvisor}{Richart Escobedo Quispe}
+\newcommand{\itemCourse}{Lenguaje de Programación I}
+\newcommand{\itemUniversity}{Universidad La Salle}
+\newcommand{\itemFaculty}{Facultad de Ingenierías y Arquitectura}
+\newcommand{\itemDepartment}{Departamento Académico de Ingeniería y Matemáticas}
+\newcommand{\itemSchool}{Carrera Profesional de Ingeniería de Software}
+\newcommand{\itemAcademic}{2026 - I}
+\newcommand{\itemInput}{05 Julio 2026}
+\newcommand{\itemOutput}{06 Julio 2026}
+\newcommand{\itemPracticeNumber}{Final}
+\newcommand{\itemTheme}{Tres en Raya Quiz}
+ 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{30pt}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\fancyhead[L]{\raisebox{0.2\height}{\includegraphics[width=3.0cm]{img/logo_internacional_secundario_color.png}}}
+\fancyhead[C]{\fontsize{7}{7}\selectfont \itemUniversity \\ \itemFaculty \\ \itemDepartment \\ \itemSchool \\ \textbf{\itemCourse}}
+\fancyfoot[L]{\itemTeacher}
+\fancyfoot[C]{Pág. \thepage}
+\fancyfoot[R]{\itemCourse}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%			BEGIN				%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+ 
+\vspace*{10px}
+ 
+\begin{center}
+ \fontsize{17}{17} \textbf{ Examen Final (Parte I)}
+\end{center}
+\centerline{\textbf{\Large Tema: \itemTheme}}
+ 
+%%% TABLE 01 HEAD
+\begin{table}[H]
+	\begin{tabular}{|x{4.7cm}|x{4.8cm}|x{4.8cm}|}
+		\hline
+		\rowcolor{tablebackground}
+		\color{white} \textbf{Estudiante} & \color{white}\textbf{Carrera Profesional} & \color{white}\textbf{Asignatura} \\
+		\hline
+		{\itemTeacher \par \itemEmail} & \itemSchool & {\itemCourse} \\
+		\hline
+	\end{tabular}
+\end{table}
+ 
+%%% TABLE 02 HEAD
+\begin{table}[H]
+	\begin{tabular}{|x{3cm}|x{6.5cm}|x{4.8cm}|}
+		\hline
+		\rowcolor{tablebackground}
+		\color{white}\textbf{Proyecto} & \color{white}\textbf{Asesor} & \color{white}\textbf{Duración} \\
+		\hline
+		\itemPracticeNumber & \itemAdvisor & 12 horas \\
+		\hline
+	\end{tabular}
+\end{table}
+ 
+%%% TABLE 03 HEAD
+\begin{table}[H]
+	\begin{tabular}{|x{4.7cm}|x{4.8cm}|x{4.8cm}|}
+		\hline
+		\rowcolor{tablebackground}
+		\color{white}\textbf{Semestre académico} & \color{white}\textbf{Fecha de inicio} & \color{white}\textbf{Fecha de entrega} \\
+		\hline
+		\itemAcademic & \itemInput & \itemOutput \\
+		\hline
+	\end{tabular}
+\end{table}
+ 
+\tableofcontents
+\clearpage
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%		ESPECIFICACIONES		%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Especificaciones del Proyecto}
+ 
+\subsection{Objetivos del proyecto}
+\begin{itemize}
+	\item Analizar e implementar la arquitectura MVC básica en Java para un juego por turnos.
+	\item Diseñar y construir una interfaz de usuario interactiva y moderna mediante la API de Java Swing.
+	\item Integrar avatares dinámicos mediante gráficos vectoriales con colores personalizados en 2D.
+	\item Implementar un sistema de trivia académica que promueva la retroalimentación pedagógica ante errores.
+	\item Diseñar un criterio objetivo de desempate basado en el tiempo de respuesta.
+\end{itemize}
+ 
+\subsection{Equipos, materiales y temas}
+\begin{itemize}
+	\item Sistema Operativo {\tt Windows 11}: Versión 25H2
+	\item Editor de texto o IDE {\tt Visual Studio Code} con extensiones Java.
+	\item JDK (Java Development Kit) versión 17 o superior.
+	\item Control de versiones con {\tt Git} y repositorio en {\tt GitHub}.
+\end{itemize}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%		MARCO TEÓRICO			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Marco Teórico}
+ 
+\subsection{Java Swing}
+\begin{itemize}
+	\item Java Swing es una biblioteca gráfica para Java que proporciona un conjunto de componentes GUI ligeros para crear interfaces independientes de la plataforma.
+	\item Utiliza una arquitectura orientada a componentes donde se anidan paneles (\texttt{JPanel}), botones (\texttt{JButton}) y etiquetas (\texttt{JLabel}) dentro de contenedores principales como el \texttt{JFrame}.
+	\item El renderizado vectorial se logra mediante \texttt{Graphics2D}, permitiendo dibujar figuras geométricas, trazados y gradientes de color suavizados por antialiasing.
+\end{itemize}
+ 
+\subsection{Programación Orientada a Objetos en Java}
+\begin{itemize}
+	\item La aplicación hace uso extensivo de conceptos clave de POO como herencia (extendiendo de \texttt{JFrame}), encapsulación (atributos de clase con modificadores de acceso private), y polimorfismo mediante el manejo de interfaces como \texttt{ActionListener}.
+\end{itemize}
+ 
+\subsection{Síntesis de Sonido MIDI}
+\begin{itemize}
+	\item En lugar de depender de archivos pesados y de formatos incompatibles (\texttt{.wav}), el proyecto utiliza la biblioteca nativa \texttt{javax.sound.midi}.
+	\item Esto nos permite inicializar un sintetizador (\texttt{Synthesizer}) y programar notas individuales y acordes de manera asíncrona, asegurando portabilidad absoluta sin dependencias externas.
+\end{itemize}
+
+\subsection{Especificaciones de la interfaz del juego}
+\begin{table}[H]
+	\caption{Especificaciones de interfaz y lógica}
+	\setlength{\tabcolsep}{0.5em}
+	{\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|p{5cm}|p{2cm}|x{5cm}|x{2cm}|}
+		\hline
+		\textbf{Resolución ventana} & 680x790 & \textbf{Layout del tablero} & Grid 3x3 \\
+		\hline
+		\textbf{Sonido integrado} & MIDI nativo & \textbf{Carga de Avatares} & JFileChooser / Vector \\
+		\hline
+		\textbf{Temas de preguntas} & POO y Swing & & \\
+		\hline
+	\end{tabular}
+	}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth,keepaspectratio]{img/IMAGEN1.png}
+	\caption{Captura del juego finalizado con visualización del tablero y tarjetas}
+\end{figure}
+ 
+\clearpage
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%		GUÍA DE TRABAJO			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Estructura del Proyecto y Trabajo}
+ 
+\subsection{Repositorio Local y Git}
+Para inicializar el proyecto en la consola de comandos se utilizaron las siguientes instrucciones de Git:
+
+\begin{lstlisting}[language=bash, caption={Clonación y estado del proyecto}]
+$ git clone https://github.com/cvalienteq-coder/lp1.git
+$ cd lp1/TresEnRayaGUI
+$ git status
+\end{lstlisting}
+
+\subsection{Archivo .gitignore}
+El archivo \texttt{.gitignore} se configuró para evitar subir archivos de clase binarios generados por el compilador de Java:
+\begin{lstlisting}[language=bash, caption={Archivo .gitignore}]
+*.class
+.project
+.classpath
+\end{lstlisting}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%		EJERCICIOS				%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Explicación e Implementación de Clases}
+ 
+El proyecto se compone de 5 clases Java que interactúan bajo el patrón de diseño orientado a componentes. A continuación se detallan las porciones de código más importantes del desarrollo:
+
+\subsubsection{1. Clase Pregunta}
+Almacena la trivia y, fundamentalmente, la explicación pedagógica que permite la retroalimentación.
+\begin{lstlisting}[language=Java, caption={Definición de atributos y constructor de Pregunta}]
+public class Pregunta {
+    private String texto;
+    private String[] opciones;
+    private int respuestaCorrecta;
+    private String explicacion; // Retroalimentacion educativa
+
+    public Pregunta(String texto, String opcion1, String opcion2, String opcion3,
+                    int respuestaCorrecta, String explicacion) {
+        this.texto = texto;
+        this.opciones = new String[]{opcion1, opcion2, opcion3};
+        this.respuestaCorrecta = respuestaCorrecta - 1; 
+        this.explicacion = explicacion;
+    }
+    public String getExplicacion() { return explicacion; }
+}
+\end{lstlisting}
+
+\subsubsection{2. Clase Jugador}
+Soporta el almacenamiento de puntos, tiempo acumulado de respuesta y el avatar del jugador:
+\begin{lstlisting}[language=Java, caption={Atributos y constructor de Jugador}]
+public class Jugador {
+    private String nombre;
+    private char simbolo;
+    private int puntos;
+    private Color color;
+    private long tiempoTotal;
+    private ImageIcon avatarIcono; // Soporte para foto/avatar a color
+
+    public Jugador(String nombre, char simbolo, ImageIcon avatarIcono) {
+        this.nombre = nombre;
+        this.simbolo = simbolo;
+        this.puntos = 0;
+        this.tiempoTotal = 0;
+        this.avatarIcono = avatarIcono;
+        
+        if (simbolo == 'X') {
+            this.color = new Color(30, 130, 255); // Azul electrico
+        } else {
+            this.color = new Color(230, 60, 60);  // Rojo intenso
+        }
+    }
+}
+\end{lstlisting}
+
+\subsubsection{3. Renderizado de Avatares a Color con Java 2D}
+Para solucionar el aspecto monocromático y plano de los emojis por defecto en Windows/Swing, se implementó un motor de dibujo de avatares vectoriales. A continuación se presenta el código que realiza este proceso:
+
+\begin{lstlisting}[language=Java, caption={Renderizado vectorial a color}, numbers=left]
+private ImageIcon renderAvatarColorido(String avatarId, int size, Color colorFondo) {
+    BufferedImage img = new BufferedImage(size, size, BufferedImage.TYPE_INT_ARGB);
+    Graphics2D g2d = img.createGraphics();
+    g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+    // Fondo circular con degradado suave
+    GradientPaint gp = new GradientPaint(0, 0, colorFondo.brighter(), size, size, colorFondo.darker());
+    g2d.setPaint(gp);
+    g2d.fillOval(2, 2, size - 5, size - 5);
+
+    // Borde circular blanco elegante
+    g2d.setColor(Color.WHITE);
+    g2d.setStroke(new BasicStroke(2.0f));
+    g2d.drawOval(2, 2, size - 5, size - 5);
+
+    int c = size / 2; // Centro
+
+    if (avatarId.equals("🤖")) {
+        // Cabeza metalica
+        g2d.setColor(new Color(175, 189, 205));
+        g2d.fillRoundRect(c - 16, c - 10, 32, 24, 6, 6);
+        // Antena dorada
+        g2d.setColor(new Color(255, 195, 0));
+        g2d.setStroke(new BasicStroke(2.5f));
+        g2d.drawLine(c, c - 10, c, c - 18);
+        g2d.fillOval(c - 3, c - 22, 6, 6);
+        // Ojos LED cyan
+        g2d.setColor(new Color(0, 255, 255));
+        g2d.fillOval(c - 10, c - 4, 6, 6);
+        g2d.fillOval(c + 4, c - 4, 6, 6);
+        // Boca
+        g2d.setColor(new Color(75, 80, 95));
+        g2d.drawRect(c - 8, c + 6, 16, 4);
+    } else if (avatarId.equals("🐱")) {
+        // Gato anaranjado
+        g2d.setColor(new Color(255, 165, 55));
+        // Orejas y rostro...
+        g2d.fillOval(c - 16, c - 8, 32, 23);
+    }
+    // (Demas avatares vectoriales se omiten por espacio)
+    g2d.dispose();
+    return new ImageIcon(img);
+}
+\end{lstlisting}
+
+\paragraph{Explicación del motor gráfico}
+\begin{itemize}
+	\item \textbf{Líneas 2--4:} Se crea un \texttt{BufferedImage} transparente y se activa el suavizado (\texttt{ANTIALIASING}) para evitar bordes pixelados.
+	\item \textbf{Líneas 6--8:} Se define un gradiente dinámico a partir del color del jugador, rellenando el fondo con un círculo.
+	\item \textbf{Líneas 10--12:} Se traza el borde circular blanco que brinda un aspecto elegante de medalla.
+	\item \textbf{Líneas 16--29:} Se dibujan primitivas del robot (cabeza, antena, ojos LED) utilizando colores vibrantes e independientes del sistema operativo.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth,keepaspectratio]{img/diagrama_de_flujo.png}
+	\caption{Flujo de interacción y registro de avatares vectoriales en el juego}
+\end{figure}
+
+\subsubsection{4. Lógica de Desempate y Resultados}
+Al culminar el juego (tablero lleno), si hay empate en puntos, se aplica el criterio de menor tiempo acumulado de respuesta (velocidad mental):
+
+\begin{lstlisting}[language=Java, caption={Lógica de decisión del ganador y desempate}]
+if (p1 > p2) {
+    ganadorNombre = jugador1.getNombre();
+    motivoGanador = "tiene mas puntos (" + p1 + " vs " + p2 + ")";
+} else if (p2 > p1) {
+    ganadorNombre = jugador2.getNombre();
+    motivoGanador = "tiene mas puntos (" + p2 + " vs " + p1 + ")";
+} else if (t1 < t2) {
+    ganadorNombre = jugador1.getNombre();
+    motivoGanador = "respondio mas rapido ("
+        + String.format("%.1f", t1 / 1000.0) + "s vs "
+        + String.format("%.1f", t2 / 1000.0) + "s)";
+}
+\end{lstlisting}
+
+\clearpage
+ 
+\subsection{Compilación y Ejecución}
+La compilación se realiza directamente con la herramienta \texttt{javac} nativa y la ejecución con la máquina virtual \texttt{java}:
+
+\begin{lstlisting}[language=bash, caption={Comandos para compilar y ejecutar el juego}]
+$ javac -encoding UTF-8 *.java
+$ java Main
+\end{lstlisting}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth,keepaspectratio]{img/codigo.png}
+	\caption{Evidencia de compilación exitosa y ejecución de Main en Windows}
+\end{figure}
+
+\clearpage
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%			TAREA				%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Tarea}
+ 
+\subsection{Pregunta y Respuesta}
+\begin{itemize}
+	\item \textbf{¿Cómo podríamos saber con exactitud cuál de todas las propuestas algorítmicas es la más óptima? Explique.}
+	
+	\textit{Respuesta:} Para determinar la optimización con exactitud, se deben evaluar dos factores fundamentales mediante el análisis de algoritmos:
+	
+	1. \textbf{Complejidad Temporal ($O$):} Se evalúa mediante la notación Big O el número de operaciones que realiza el algoritmo con relación al tamaño de la entrada ($n$). Una búsqueda en un \texttt{HashMap} es $O(1)$ promedio, siendo más óptima que una búsqueda secuencial en una lista que es $O(n)$.
+	
+	2. \textbf{Complejidad Espacial:} Evalúa el consumo de memoria del algoritmo. Por ejemplo, en Swing y manejo de gráficos, dibujar elementos vectoriales al vuelo en memoria (\texttt{Graphics2D}) evita la carga de recursos de disco, optimizando drásticamente el espacio y evitando I/O bloqueante.
+\end{itemize}
+ 
+\clearpage
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%		ENTREGABLES			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Entregables}
+El proyecto se encuentra alojado en el repositorio GitHub correspondiente a la asignatura, con la siguiente estructura de archivos:
+ 
+\begin{lstlisting}[style=ascii-tree]
+TresEnRayaGUI/
+|--- .gitignore
+|--- README.md
+|--- Main.java
+|--- VentanaJuego.java
+|--- Jugador.java
+|--- Pregunta.java
+|--- GestorPreguntas.java
+|--- latex/
+|       |--- informe.tex
+|       |--- informe.pdf
+|       |--- img/
+|               |--- logo_internacional_secundario_color.png
+|               |--- IMAGEN1.png
+|               |--- diagrama_de_flujo.png
+|               |--- codigo.png
+\end{lstlisting}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%			RÚBRICAS			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rúbricas}
+ 
+\subsection{Evaluación del Proyecto}
+\begin{table}[H]
+	\caption{Rúbrica de evaluación - Contenido del Proyecto}
+	\setlength{\tabcolsep}{0.5em}
+	{\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|p{2.7cm}|p{7cm}|x{1.3cm}|p{1.2cm}|p{1.5cm}|p{1.1cm}|}
+		\hline
+		\multicolumn{2}{|c|}{Contenido y demostración} & Puntos & Checklist & Estudiante & Profesor \\
+		\hline
+		\textbf{1. Interfaz Swing} & Tablero funcional 3x3 a color con botones adaptados y barra de estado de turnos. & 4 & SI & 4 & \\
+		\hline
+		\textbf{2. Banco Trivia} & Banco de preguntas sobre POO y Swing con explicaciones de retroalimentación. & 4 & SI & 4 & \\
+		\hline
+		\textbf{3. Carga Avatares} & Diálogo de registro para fotos locales e iconos vectoriales dinámicos de color. & 4 & SI & 4 & \\
+		\hline
+		\textbf{4. Sonidos} & Sonido MIDI nativo para acierto, fallo y victoria integrado. & 2 & SI & 2 & \\
+		\hline
+		\textbf{5. Desempate} & Algoritmo de desempate por milisegundos en caso de empate en tablero. & 2 & SI  & 2 & \\
+		\hline
+		\textcolor{red}{\textbf{6. Madurez}} & \textcolor{blue}{El Informe muestra una evolución de la madurez del código con explicaciones precisas del motor de renderizado y el temporizador.} & \textcolor{blue}{4} & SI & 4 & \\
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Total}} & 20 && 20 & \\
+		\hline
+	\end{tabular}
+	}
+\end{table}
+ 
+\clearpage
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%		REFERENCIAS			%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Referencias}
+\begin{itemize}
+	\item Documentación oficial de Java SE: \url{https://docs.oracle.com/javase/8/docs/api/}
+	\item Tutorial de Java Swing y Graphics2D: \url{https://docs.oracle.com/javase/tutorial/uiswing/}
+	\item Especificación javax.sound.midi: \url{https://docs.oracle.com/javase/8/docs/technotes/guides/sound/}
+\end{itemize}
+ 
+\printindex
+ 
+\end{document}
