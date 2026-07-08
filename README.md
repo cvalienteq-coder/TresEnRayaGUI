@@ -82,7 +82,8 @@ java Main
 
 El informe completo del proyecto, elaborado en LaTeX según el formato de la Universidad La Salle, incluye marco teórico, diseño (diagramas de clases y flujo actualizados a la v2.0), implementación comentada, análisis de complejidad Big O y rúbrica de autoevaluación.
 
-👉 [Ver Informe Completo (PDF)](latex/informe.pdf)
+👉 [Ver Informe Completo (PDF)][Informe de proyecto fianl V2.0.pdf](https://github.com/user-attachments/files/29812117/Informe.de.proyecto.fianl.V2.0.pdf)
+
 
 ---
 
