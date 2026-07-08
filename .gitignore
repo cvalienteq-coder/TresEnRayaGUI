@@ -8,3 +8,6 @@
 /VentanaJuego$VentanaJuego.class
 .classpath
 .project
+/VentanaJuego$1.class
+*.class
+VentanaJuego$1.class
