@@ -12,7 +12,7 @@
 Imagina combinar el clásico Tres en Raya con un quiz de programación en Java. No puedes marcar una casilla sin antes responder correctamente una pregunta sobre POO, Swing o estructuras de datos. ¡Eso es exactamente lo que hemos creado!
 
 ---
-*Video de ejecucion del juego*   https://youtu.be/RbF8HhOAy2U
+*Video de ejecucion del juego*   https://youtu.be/JgCTjaSfqn4?si=YwXacPOERzwRyAkc
   
 
 ## ✨ Características (v2.0)
